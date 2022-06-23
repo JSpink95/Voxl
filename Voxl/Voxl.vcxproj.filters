@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="game">
+      <UniqueIdentifier>{843aad79-5992-4de7-95bb-d7527f39204a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="window">
+      <UniqueIdentifier>{b4d4d875-2618-4144-a92e-d04584d8c1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FastNoiseLite">
+      <UniqueIdentifier>{71af5aea-a314-42f2-9333-86cd76223b28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\voxel.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\chunk.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\chunk_manager.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="window\app_window.h">
+      <Filter>window</Filter>
+    </ClInclude>
+    <ClInclude Include="game\noise.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="FastNoiseLite\FastNoiseLite.h">
+      <Filter>FastNoiseLite</Filter>
+    </ClInclude>
+    <ClInclude Include="window\input_manager.h">
+      <Filter>window</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\voxel.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\chunk.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="game\chunk_manager.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="window\app_window.cpp">
+      <Filter>window</Filter>
+    </ClCompile>
+    <ClCompile Include="game\noise.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="window\input_manager.cpp">
+      <Filter>window</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
