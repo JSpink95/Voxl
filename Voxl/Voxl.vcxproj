@@ -102,8 +102,10 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32s.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)Vendor\SDL2-2.0.16\lib\$(Platform)\SDL2.dll" "$(OutDir)"
-</Command>
+      <Command>
+      copy "$(SolutionDir)Vendor\SDL2-2.0.16\lib\$(Platform)\SDL2.dll" "$(OutDir)"
+      copy "$(SolutionDir)WD\*" "$(OutDir)WD\*"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -147,6 +149,7 @@
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)Vendor\SDL2-2.0.16\lib\$(Platform)\SDL2.dll" "$(OutDir)"
+xcopy "$(SolutionDir)WD\" "$(OutDir)WD\" /E/H/C/I
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -171,6 +174,7 @@
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)Vendor\SDL2-2.0.16\lib\$(Platform)\SDL2.dll" "$(OutDir)"
+xcopy "$(SolutionDir)WD\" "$(OutDir)WD\" /E/H/C/I
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
